@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="Todo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List  <img src="img10.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <div class="dropdown">
+                    <button onclick="togglePriorityDropdown()" class="dropbtn" id="priorityBtn">Priority</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#" onclick="setPriority('high')">High</a>
+                        <a href="#" onclick="setPriority('medium')">Medium</a>
+                        <a href="#" onclick="setPriority('low')">Low</a>
+                    </div>
+                </div>
+                <button onclick="addtask()">Add</button>
+                <div id="snackbar">Task Added.!</div>
+            </div>
+            
+            <ul id="list-container">
+                <li class="checked"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="Todo.js"></script>
+</body>
+</html>
